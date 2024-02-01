@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote name="github"
+          fetch="https://github.com/"
+          revision="thirteen" />
+
+  <remote name="lineageos"
+          fetch="https://github.com/"
+          revision="lineage-20.0"
+          review="review.lineageos.org" />
+
   <remote name="pixel"
           fetch="https://github.com/PixelExperience"
           revision="thirteen"
@@ -113,6 +122,7 @@
   <project path="hardware/st/nfc" name="hardware_st_nfc" remote="pixel" />
 
   <!-- Packages repos -->
+  <project path="lineage-sdk" name="LineageOS/android_lineage-sdk" remote="lineageos" />
   <project path="packages/apps/Camera2" name="packages_apps_Camera2" remote="pixel" />
   <project path="packages/apps/CarrierConfig" name="packages_apps_CarrierConfig" remote="pixel" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="pixel" />
